@@ -953,15 +953,16 @@ function restartQuest(){
     window.scrollTo({top:0,behavior:'smooth'});
 }
 
-function shareQuest(){
-    const data={title:'🎂 Birthday Quest',text:'Пройди квест с днём рождения!',url:window.location.href};
-    if(navigator.share)navigator.share(data).catch(()=>{});
-    else if(navigator.clipboard){
-        navigator.clipboard.writeText(window.location.href);
-        alert('Ссылка скопирована! 🎉');
+//function shareQuest(){
+//    const data={title:'🎂 Birthday Quest',text:'Пройди квест с днём рождения!',url:window.location.href};
+//    if(navigator.share)navigator.share(data).catch(()=>{});
+//    else if(navigator.clipboard){
+//        navigator.clipboard.writeText(window.location.href);
+//        alert('Ссылка скопирована! 🎉');
     }
 }
 </script>
 </body>
 </html>
+
 
