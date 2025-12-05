@@ -656,7 +656,7 @@
             </div>
             <button class="hint-toggle" onclick="togglePasswordHint()">💡 Показать подсказку</button>
             <div class="password-hint" id="passwordHint">
-                <span class="password-hint-text">💡 Подсказка: День и месяц твоего рождения.Так уж и быть год палить не будем))  (например: 08.12)</span>
+                <span class="password-hint-text">💡 Подсказка: День и месяц твоего рождения.Так уж и быть год палить не будем))  (например: 0812)</span>
             </div>
             <div class="error-message" id="errorMessage">❌ Неверный пароль!</div>
             <button class="btn btn-primary" onclick="checkPassword()" style="width:100%">🚀 Войти</button>
@@ -692,7 +692,7 @@
                 <div class="input-group">
                     <input type="text" id="answer1" placeholder="Введи ответ..." autocomplete="off" enterkeyhint="done">
                 </div>
-                <div class="hint-box" id="hint1">💡 <strong>Подсказка:</strong> Это два слова, и сегодня именно он!</div>
+                <div class="hint-box" id="hint1">💡 <strong>Подсказка:</strong> Какая подсказка!?, проще некуда!!!</div>
                 <div class="btn-group">
                     <button class="btn btn-primary" onclick="checkAnswer(1)">✨ Проверить</button>
                     <button class="btn btn-secondary" onclick="showHint(1)">💡 Подсказка</button>
@@ -720,7 +720,7 @@
                 <div class="input-group">
                     <input type="text" id="answer2" placeholder="Введи ответ..." autocomplete="off" enterkeyhint="done">
                 </div>
-                <div class="hint-box" id="hint2">💡 <strong>Подсказка:</strong> То, что дарят!</div>
+                <div class="hint-box" id="hint2">💡 <strong>Подсказка:</strong> Издеваешся?!</div>
                 <div class="btn-group">
                     <button class="btn btn-primary" onclick="checkAnswer(2)">✨ Проверить</button>
                     <button class="btn btn-secondary" onclick="showHint(2)">💡 Подсказка</button>
@@ -756,7 +756,7 @@
     </div>
 
 <script>
-const CONFIG={password:"08.12",maxAttempts:5,lockTime:60};
+const CONFIG={password:"0812",maxAttempts:5,lockTime:60};
 const answers={1:['День Рождения','день рождения','день рожденья','деньрождения','др'],2:['подарок','подарочек']};
 let currentStage=1,totalStages=3,attempts=CONFIG.maxAttempts,isLocked=false;
 
@@ -964,3 +964,4 @@ function shareQuest(){
 </script>
 </body>
 </html>
+
